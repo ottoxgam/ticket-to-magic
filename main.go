@@ -12,7 +12,6 @@ import (
 const UserAgent = "Mozilla/5.0 (X11; Linux x86_64; rv:98.0) Gecko/20100101 Firefox/98.0"
 const AvailabilityURL = "https://cme-dlr.wdprapps.disney.com/availability/api/v2/availabilities/?sku=66282&sku=66283"
 const TokenURL = "https://disneyland.disney.go.com/com-shared/api/get-token/"
-const DateLayout = "2006-01-02"
 const OutputFile = "availability.json"
 
 type TokenResponse struct {
