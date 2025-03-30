@@ -58,6 +58,12 @@ func main() {
 			log.Println("Failed to query availability:", err)
 		} else {
 			saveAvailability(availability)
+
+			if len(availability.Availabilities) > 0 {
+				firstDate := availability.Availabilities[0].Date
+				lastDate := availability.Availabilities[len(availability.Availabilities)-1].Date
+				log.Println("Availability from", firstDate, "to", lastDate)
+			}
 		}
 
 		log.Println("Sleeping for 1 hour...")
